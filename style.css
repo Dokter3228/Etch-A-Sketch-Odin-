@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+main {
+  width: 700px;
+  height: 700px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.plate:hover {
+  opacity: 80%;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  min-width: 100px;
+  min-height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 500;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#color-selector {
+  padding: 0 30px 0 10px;
+  min-height: 40px;
+  color: white;
+  background: #333333;
+  border-top: #222 solid 1px;
+  top: 0;
+  width: 100px;
+  order: 2;
+  z-index: 1;
+  border: none;
+  outline: 0px;
+}
+
+#color-selector:hover {
+  opacity: 80%;
+  border: none;
+}
+
+.select:focus .option {
+  border: none;
+  pointer-events: all;
+}
